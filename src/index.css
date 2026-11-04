@@ -4,8 +4,8 @@
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
   --sans: 'DM Sans', 'Segoe UI', sans-serif;
   --serif: 'Playfair Display', Georgia, serif;
-  color: #26332e;
-  background: #f7f8f5;
+  color: #f2efe5;
+  background: #121916;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,5 +19,5 @@ html { min-width: 320px; scroll-behavior: smooth; }
 body { min-width: 320px; min-height: 100vh; margin: 0; }
 button, input, select { font: inherit; }
 button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid #9a6372; outline-offset: 3px; }
-::selection { color: #fff; background: #814456; }
+::selection { color: #fff; background: #8f4e61; }
 #root { min-height: 100vh; }

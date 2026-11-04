@@ -23,4 +23,4 @@ npm run preview
 
 Os registros são guardados no `localStorage` do navegador. Não há servidor, conta ou sincronização entre dispositivos. As fotos selecionadas são redimensionadas e comprimidas no navegador antes de serem salvas; como o armazenamento local é limitado pelo navegador, ele não substitui um backup. Os oito vinhos desta coleção são carregados na primeira visita. Se houver dados da versão anterior, os exemplos antigos são substituídos, preservando registros adicionados pelo usuário.
 
-As fotos dos rótulos e as fontes tipográficas são carregadas de serviços externos e precisam de conexão com a internet. Fotos adicionadas pelo usuário ficam no armazenamento local do navegador.
+As fotos dos oito rótulos do catálogo ficam em `public/wines` e são incluídas no deploy. As fontes tipográficas vêm do Google Fonts e precisam de conexão com a internet. Fotos adicionadas pelo usuário ficam no armazenamento local do navegador.

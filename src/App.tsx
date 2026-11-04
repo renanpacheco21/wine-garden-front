@@ -47,7 +47,7 @@ const sampleWines: Wine[] = [
     grapes: 'Goethe',
     alcohol: '11,5%',
     vintage: 'Não safrado',
-    image: 'https://images.openai.com/static-rsc-4/-viRDhH1TaFnt1oz_SNRedZLUvvnDPwlFxpIPDYmD79S5QV30OCh1DZ30TqqQDrTeiRtDTbhwtuds2VaXxjd_eSUE4sSc-jgpF6YKcH-FB9jUxcsJxEluAyk90Oa-JW_W1lqwlsK-BhSLfcvRHykx5s7-bcaxGsB_mZDiik1Upw?purpose=inline',
+    image: '/wines/margherita-goethe.jpg',
     favorite: false,
   },
   {
@@ -61,7 +61,7 @@ const sampleWines: Wine[] = [
     grapes: 'Cabernet Sauvignon, Merlot e Marselan',
     alcohol: '11,5%',
     vintage: 'Não safrado',
-    image: 'https://images.openai.com/static-rsc-4/KC7MilD4P6NwwB2rV4oL63xobC-MA11UCCdBpf_ZxXJRkHKjhkr06fbIeg-Rc1C25ErS72d2dl_hembG6HeoeMCDjqeQXwUMjhBSgzhViYlbhnQ-qh2H-bbZiiScZvGcRRtbHu3M-h1CmumEdGGVn5e-eLR4m_bCpcuTxzuvrIM?purpose=inline',
+    image: '/wines/naturelle-tinto.jpg',
     favorite: false,
   },
   {
@@ -75,7 +75,7 @@ const sampleWines: Wine[] = [
     grapes: 'Malbec',
     alcohol: '13,2%',
     vintage: '2024',
-    image: 'https://onivino.com.br/wp-content/uploads/2021/02/mosquita-muerta-cordero-con-piel-de-lobo-rose-malbec-800x800-1.png',
+    image: '/wines/cordero-rose.jpg',
     favorite: false,
   },
   {
@@ -89,7 +89,7 @@ const sampleWines: Wine[] = [
     grapes: 'Cabernet Sauvignon',
     alcohol: '13–13,5%',
     vintage: 'Não identificada',
-    image: 'https://images.openai.com/static-rsc-4/X3XOS97k38mcooti6ZozrapoqyCW_AbXFEnLql1SxVJ_8CbtVzHwpp05wX3jsR2uKTChDladDuDtaq9DG9lO0g9wmqNsArpXmKJc_s-9j48JvvAOMRrsTYs84z2KZ2RKm1xnDjzYPz_qENMPT7f1Xa6GU8yQIoU08FWRm42G2u0?purpose=inline',
+    image: '/wines/cordero-cabernet.jpg',
     favorite: false,
   },
   {
@@ -103,7 +103,7 @@ const sampleWines: Wine[] = [
     grapes: 'Blend de uvas tintas',
     alcohol: '13,5%',
     vintage: 'Não identificada',
-    image: 'https://images.openai.com/static-rsc-4/YeRKxom91gr9WiFN9G-tdJimqCkv96b7o-csLmlL0TSUyVhseWXHq1DuABPD_ObdusfB5gkzu4yZfqzOKDVnqB4vbpTBWioqFlNvULuS2AdLntxL1VrsmOxXtB8PpoZvYHOAZUyfPMntYGM27Pp-S_ChhAeHtDXCM0lLYhJYEzk?purpose=inline',
+    image: '/wines/casillero-dark-red.jpg',
     favorite: false,
   },
   {
@@ -117,7 +117,7 @@ const sampleWines: Wine[] = [
     grapes: 'Cabernet Sauvignon',
     alcohol: '13,5%',
     vintage: '2024',
-    image: 'https://images.openai.com/static-rsc-4/pEWwMapMZhz9v1PXsH63Eha8dXN3hE1X8aHDAjExm8338dg6tS7a5M-5S1YgcbfRpw1zRX3JTme5CFJUYf-5-0P5EzHPlkDMKLMaN4ZgYm-u-3qeWFt3NvKC5-40GKgBRuxOQ6ijcgzhJfRVLsCFbcjhqQaBmAVwk7DTkXxY_OQ?purpose=inline',
+    image: '/wines/fausto-cabernet.jpg',
     favorite: false,
   },
   {
@@ -131,7 +131,7 @@ const sampleWines: Wine[] = [
     grapes: 'Cabernet Sauvignon',
     alcohol: '13,3%',
     vintage: '2023',
-    image: 'https://images.openai.com/static-rsc-4/-tv8eIU4NTR9EHLx16dpRQpHWptm3LmSrpoezPB1V1JswAV6VqWbd6tB3LiBsg3yXw8jraYuQ9cPuGL0e5kLzaBkhndXeUDx3jKSgR4XEvEudez9AxHMuz30zOkTA3YPyj1eXc7VxaEViBAqYS6vu0xnlcQ1SOeUr62RKkGwgoM?purpose=inline',
+    image: '/wines/perro-callejero.png',
     favorite: false,
   },
   {
@@ -145,7 +145,7 @@ const sampleWines: Wine[] = [
     grapes: 'Merlot, Cabernet Franc, Malbec e Syrah',
     alcohol: '13%',
     vintage: '2024',
-    image: 'https://loja.vinicolathera.com.br/cdn/shop/files/thera-garrafa-thera-madai-2024.png?v=1792609138&width=800',
+    image: '/wines/thera-madai.png',
     favorite: false,
   },
 ]
@@ -155,7 +155,7 @@ const sweetnessOptions: Sweetness[] = ['Seco', 'Meio-seco', 'Demi-sec', 'Suave',
 const storageKey = 'wine-garden-collection'
 const legacySampleIds = new Set(['sample-1', 'sample-2', 'sample-3', 'sample-4', 'sample-5', 'sample-6'])
 const catalogVersionKey = 'wine-garden-catalog-version'
-const catalogVersion = '2'
+const catalogVersion = '3'
 
 const emptyDraft: WineDraft = {
   name: '',
@@ -176,12 +176,13 @@ function readWines(): Wine[] {
     if (!saved) return sampleWines
     const storedWines = JSON.parse(saved) as Wine[]
     if (!Array.isArray(storedWines)) return sampleWines
-    const newRoseImage = sampleWines.find((wine) => wine.id === 'catalog-03')?.image
-    const migratedWines = storedWines.map((wine) => (
-      wine.id === 'catalog-03' && wine.image.includes('M-uTsgWN7') && newRoseImage
-        ? { ...wine, image: newRoseImage }
+    const catalogImages = new Map(sampleWines.map((wine) => [wine.id, wine.image]))
+    const migratedWines = storedWines.map((wine) => {
+      const localImage = catalogImages.get(wine.id)
+      return localImage && /^https?:\/\//.test(wine.image)
+        ? { ...wine, image: localImage }
         : wine
-    ))
+    })
     if (migratedWines.some((wine) => legacySampleIds.has(wine.id))) {
       const personalWines = migratedWines.filter((wine) => !legacySampleIds.has(wine.id))
       return [...sampleWines, ...personalWines]
@@ -373,7 +374,7 @@ function App() {
           <span>adega<span className="brand-period">.</span></span>
         </a>
         <nav className="top-nav" aria-label="Navegação principal">
-          <a className="top-nav__link is-active" href="#colecao">Minha coleção</a>
+          <a className="top-nav__link is-active" href="#colecao">Vinhos</a>
           <button className={`top-nav__link${favoritesOnly ? ' is-active' : ''}`} type="button" onClick={() => setFavoritesOnly((value) => !value)}>
             Favoritos <span className="nav-count">{favoriteCount}</span>
           </button>
@@ -402,7 +403,7 @@ function App() {
           <div className="collection-heading">
             <div>
               <p className="eyebrow">SEU ACERVO, SEU PALADAR</p>
-              <h2 id="collection-title">Minha coleção <span className="collection-total">{wines.length.toString().padStart(2, '0')}</span></h2>
+              <h2 id="collection-title">Nossa adega</h2>
             </div>
             <div className="collection-stats">
               <div><strong>{wines.length}</strong><span>rótulos</span></div>
