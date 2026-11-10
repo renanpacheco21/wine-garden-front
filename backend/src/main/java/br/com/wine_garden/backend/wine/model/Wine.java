@@ -42,7 +42,7 @@ public class Wine {
     @Column(nullable = false, length = 200)
     private String uvas;
 
-    @Column(nullable = true, length = 4)
+    @Column(length = 4)
     private Integer safra;
 
     @Column(nullable = false)
