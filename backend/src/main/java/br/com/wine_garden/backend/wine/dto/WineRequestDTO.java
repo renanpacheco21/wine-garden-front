@@ -35,7 +35,7 @@ public class WineRequestDTO {
     @NotBlank
     private String uvas;
 
-    private Integer safra;
+    private String safra;
 
     @NotNull
     private boolean favorito;

@@ -18,7 +18,7 @@ public class WineResponseDTO {
     private WineCollors cor;
     private WineSweetness docura;
     private String uvas;
-    private Integer safra;
+    private String safra;
     private boolean favorito;
     private boolean custoBeneficio;
     private String imagemUrl;

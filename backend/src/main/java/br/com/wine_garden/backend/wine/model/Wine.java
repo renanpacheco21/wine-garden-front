@@ -43,7 +43,7 @@ public class Wine {
     private String uvas;
 
     @Column(length = 4)
-    private Integer safra;
+    private String safra;
 
     @Column(nullable = false)
     private boolean favorito;
